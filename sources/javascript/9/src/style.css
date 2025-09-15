@@ -1,0 +1,64 @@
+/* Default stylesheet and tools */
+body,
+html {
+  background: rgb(245, 245, 245);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+#container-mouse {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: -100px;
+  left: -100px;
+  background: rgb(240, 240, 240);
+  -webkit-box-shadow: 4px 2px 15px -3px rgba(0, 0, 0, 0.31);
+  box-shadow: 4px 2px 15px -3px rgba(0, 0, 0, 0.31);
+  border-radius: 50%;
+  transform-origin: center center;
+  transform: translate(-50%, -50%);
+  cursor: none;
+  z-index: 100;
+}
+
+#tools {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  background: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  padding: 0;
+}
+
+#container-image {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+}
+
+#container-image > img {
+  width: 100%;
+}
+
+#tools p {
+  margin: 0;
+  padding: 0;
+}

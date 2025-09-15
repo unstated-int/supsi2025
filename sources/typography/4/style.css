@@ -1,0 +1,103 @@
+/** import fonts **/
+@font-face {
+  font-family: "ABCDiatypeMono-Heavy-Trial";
+  src: url("fonts/ABCDiatypeMono-Heavy-Trial.woff") format("woff"),
+    url("fonts/ABCDiatypeMono-Heavy-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ABCDiatypeMono-Regular-Trial";
+  src: url("fonts/ABCDiatypeMono-Regular-Trial.woff") format("woff"),
+    url("fonts/ABCDiatypeMono-Regular-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ABCDiatypeMono-ThinItalic-Trial";
+  src: url("fonts/ABCDiatypeMono-ThinItalic-Trial.woff") format("woff"),
+    url("fonts/ABCDiatypeMono-ThinItalic-Trial.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** flex-container **/
+.flex-container {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex-item-full {
+  width: 100%;
+}
+
+.flex-item-one-third {
+  width: calc(33.33% - 20px);
+}
+
+.flex-item-one-half {
+  width: calc(50% - 10px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+strong {
+  color: var(--color-primary);
+  padding: 0;
+  margin: 0;
+}
+
+.font-regular {
+  font-family: "ABCDiatypeMono-Regular-Trial";
+}
+
+.font-bold {
+  font-family: "ABCDiatypeMono-Heavy-Trial";
+}
+
+.font-italic {
+  font-family: "ABCDiatypeMono-ThinItalic-Trial";
+}
+
+.font-extra-small {
+  font-size: 11px;
+  line-height: 120%;
+}
+
+.font-medium {
+  font-size: 21px;
+  line-height: 120%;
+}
+
+.text-center {
+  text-align: center; 
+}
+
+h1 {
+  font-size: 100px;
+  line-height: 100%;
+  padding: 20px 0px;
+}
+
+@media (max-width: 768px) {
+  .flex-item-one-third {
+    width: 100%;
+  }
+
+  .flex-item-one-half {
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "ABCGInto";
+  src: url("./src/ABCGintoPlusVariable-Trial.woff2") format("woff2-variations"),
+    url("./src/ABCGintoPlusVariable-Trial.woff") format("woff-variations");
+}
+
+/* Default stylesheet and tools */
+body,
+html {
+  background: rgb(245, 245, 245);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column;  */
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column;  */
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+#container > p {
+  font-size: 100vh;
+  font-family: "ABCGInto";
+  font-variation-settings: "wght" 700.62;
+  text-transform: uppercase;
+  /* transition: font-variation-settings 0.1s ease-in-out; */
+}
+
+#tools {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  background: red;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  padding: 0;
+  pointer-events: none;
+}
+
+#tools p {
+  margin: 0;
+  padding: 0;
+}

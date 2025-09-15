@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link href="src/style.css" rel="stylesheet" />
+  </head>
+  <body id="body">
+    <div id="label">Loading ...</div>
+    <div><canvas id="canvas"></canvas></div>
+    <div id="label-container"></div>
+  </body>
+  <!-- https://teachablemachine.withgoogle.com/train -->
+  <script src="src/libs/p5.js"></script>
+  <script src="src/libs/tf.min.js"></script>
+  <script src="src/libs/teachablemachine-pose.min.js"></script>
+  <script src="src/init-posenet.js"></script>
+  <script src="src/app.js"></script>
+</html>

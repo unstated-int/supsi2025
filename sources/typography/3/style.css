@@ -1,0 +1,60 @@
+/** import fonts **/
+@font-face {
+  font-family: 'ABCDiatypeMono-Heavy-Trial';
+  src: url('fonts/ABCDiatypeMono-Heavy-Trial.woff') format('woff'),
+        url('fonts/ABCDiatypeMono-Heavy-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatypeMono-Regular-Trial';
+  src: url('fonts/ABCDiatypeMono-Regular-Trial.woff') format('woff'),
+        url('fonts/ABCDiatypeMono-Regular-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatypeMono-ThinItalic-Trial';
+  src: url('fonts/ABCDiatypeMono-ThinItalic-Trial.woff') format('woff'),
+        url('fonts/ABCDiatypeMono-ThinItalic-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/** flex-container **/
+.container {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, em, strong {
+  color: var(--color-primary);
+}
+
+.font-regular {
+  font-family: 'ABCDiatypeMono-Regular-Trial';
+}
+
+.font-bold {
+  font-family: 'ABCDiatypeMono-Heavy-Trial';
+}
+
+.font-italic {
+  font-family: 'ABCDiatypeMono-ThinItalic-Trial';
+}
+
+.font-medium {
+  font-size: 21px;
+  line-height: 120%;
+}
+.columns-2 {
+  columns: 2;
+  column-gap: 20px;
+}
