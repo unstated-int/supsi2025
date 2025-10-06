@@ -26,12 +26,12 @@ html {
 }
 
 #rettangolo.blue {
-  background: rgb(255, 0, 0);
+  background: rgb(0, 0, 255);
 }
 
 #rettangolo.border {
   border-radius: 50%;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 #rettangolo.marginTop {

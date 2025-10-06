@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6, p, em, strong {
   font-size: 21px;
   line-height: 120%;
 }
+
 .columns-2 {
   columns: 2;
   column-gap: 20px;

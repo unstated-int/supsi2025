@@ -1,19 +1,16 @@
-/** flex-container **/
-.container {
-  background-color: var(--color-secondary);
-  border-radius: var(--border-radius);
-  padding: 10px;
-  margin-bottom: 50px;
-}
-
-h1, h2, h3, h4, h5, h6, p, em, strong {
-  color: var(--color-primary);
-  margin: 0
-}
-
-.main-p {
+.font-h1 {
   color: red;
-  font-family: 'Arial';
+  letter-spacing: 10px;
+  word-spacing: 100px;
+  font-family: 'Arial', monospace;
+  font-weight: 600;
   font-style: italic;
-  font-weight: bold;
+}
+
+.paragrafo {
+  color: blue;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }

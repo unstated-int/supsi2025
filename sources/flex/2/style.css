@@ -16,7 +16,7 @@
 
 .flex-container-center {
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .flex-container-end {

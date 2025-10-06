@@ -47,10 +47,12 @@ a {
 .special-link-2 {
   font-size: 20px;
   color: orange;
+  transition: all 1s ease-in-out;
 }
 
 .special-link-2:hover {
-  color: red;
+  color: blue;
+  letter-spacing: 10px;
 }
 
 
@@ -82,12 +84,13 @@ li {
 
 .special-item-2 {
   margin-left: 50px;
+  b
 }
 
 
 /** image **/
 .special-image {
-  width: 30%;
+  width: 100%;
   border-radius: 100px;
 }
 .special-image-2 {

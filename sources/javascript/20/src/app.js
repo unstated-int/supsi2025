@@ -30,8 +30,20 @@ function draw(predictions) {
       rect.style.left = `${x}px `;
       rect.style.backgroundColor = "pink";
       rect.style.borderRadius = "0%";
-      rect.style.width = `${mapRange(widthFace,0,widthCanvas,0,widthWindow)}px`;
-      rect.style.height = `${mapRange(heightFace,0,heightCanvas, 0,heightWindow)}px`;
+      rect.style.width = `${mapRange(
+        widthFace,
+        0,
+        widthCanvas,
+        0,
+        widthWindow
+      )}px`;
+      rect.style.height = `${mapRange(
+        heightFace,
+        0,
+        heightCanvas,
+        0,
+        heightWindow
+      )}px`;
       rect.innerHTML = `x: ${xFace} <br> y: ${yFace} <br> width: ${widthFace} <br> height: ${heightFace}`;
 
       //change the color of the container if the face is on the right or on the left
@@ -54,7 +66,7 @@ function draw(predictions) {
     else {
       rect.style.backgroundColor = "blue";
     }
-  } 
+  }
   //out of the canvas
   else {
     rect.style.backgroundColor = "red";
