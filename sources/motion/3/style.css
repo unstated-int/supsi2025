@@ -21,15 +21,16 @@ body {
   height: 20vw;
   z-index: 100;
   cursor: pointer;
+  border-radius: 10%;
   background-color: var(--color-primary);
   transform: translate(-50%, -50%) scale(1);
   /* transform-origin: center; */
   transition: background-color 500ms ease-in-out,
-    border-radius 500ms ease-in-out, transform 1s ease-in-out 500ms;
+  border-radius 500ms ease-in-out, transform 1s ease-in-out 500ms;
 }
 
 .container:hover {
   background-color: black;
   border-radius: 50%;
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(2);
 }

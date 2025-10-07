@@ -15,6 +15,7 @@ let img = document.querySelector("#img");
 
 //other variables
 let statusImage = 1;
+
 let windowWidth = window.innerWidth;
 let windowHeight = window.innerHeight;
 let videoLoaded = false;

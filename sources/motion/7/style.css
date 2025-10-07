@@ -23,12 +23,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 100px;
 }
 
 .col {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: var(--color-primary);
 }
 
@@ -83,7 +83,6 @@ body {
     transform: translateY(0px);
     background: black;
   }
-
 
   100% {
     

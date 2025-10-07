@@ -16,33 +16,23 @@ let windowHeight = window.innerHeight;
 let mouseX, mouseY;
 
 //events
-container.addEventListener("click", mouseClickFn, true);
-container.addEventListener("mousemove", mouseMoveFn, true);
-container.addEventListener("dblclick", mouseDblClickFn, true);
-container.addEventListener("mouseleave", mouseLeaveFn, true);
-container.addEventListener("mouseenter", mouseEnterFn, true);
+container.addEventListener("click", mouseClickFn);
+container.addEventListener("mousemove", mouseMoveFn);
+container.addEventListener("dblclick", mouseDblClickFn);
+container.addEventListener("mouseleave", mouseLeaveFn);
+container.addEventListener("mouseenter", mouseEnterFn);
 
-window.addEventListener("keypress", keyPressFn, true);
-window.addEventListener("resize", resizeFn, true);
+window.addEventListener("keypress", keyPressFn);
+window.addEventListener("resize", resizeFn);
 
 //mouseClick
 function mouseClickFn(event) {
-  toolsData.innerHTML = `X: ${event.pageX}, Y: ${event.pageY}`;
-  containerMouse.style.top = `${event.pageY}px`;
-  containerMouse.style.left = `${event.pageX}px`;
-  mouseX = event.pageX;
-  mouseY = event.pageY;
   container.classList.remove("dblclickColor");
   container.classList.add("clickColor");
 }
 
 //mouseDblClick
 function mouseDblClickFn(event) {
-  toolsData.innerHTML = `X: ${event.pageX}, Y: ${event.pageY}`;
-  containerMouse.style.top = `${event.pageY}px`;
-  containerMouse.style.left = `${event.pageX}px`;
-  mouseX = event.pageX;
-  mouseY = event.pageY;
   container.classList.remove("clickColor");
   container.classList.add("dblclickColor");
 }
@@ -52,8 +42,6 @@ function mouseMoveFn(event) {
   toolsData.innerHTML = `X: ${event.pageX}, Y: ${event.pageY}`;
   containerMouse.style.top = `${event.pageY}px`;
   containerMouse.style.left = `${event.pageX}px`;
-  mouseX = event.pageX;
-  mouseY = event.pageY;
 }
 
 //mouseLeave

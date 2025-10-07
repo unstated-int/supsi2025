@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "ABCGInto";
+  font-family: "Lasagne";
   src: url("./src/ABCGintoPlusVariable-Trial.woff2") format("woff2-variations"),
     url("./src/ABCGintoPlusVariable-Trial.woff") format("woff-variations");
 }
@@ -30,8 +30,8 @@ html {
 
 #container > p {
   font-size: 100vh;
-  font-family: "ABCGInto";
-  font-variation-settings: "wght" 700.62;
+  font-family: "Lasagne";
+  font-variation-settings: "ital" 12, "wght" 700.6, "wdth" 900.2;
   text-transform: uppercase;
   /* transition: font-variation-settings 0.1s ease-in-out; */
 }

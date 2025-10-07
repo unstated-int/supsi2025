@@ -24,6 +24,8 @@ body {
   transform: translate(-50%, -50%) rotate(0deg);
   transform-origin: center;
   transition: 1s all ease-in-out 0s;
+  font-size: 200px;
+  color: black;
 }
 
 .rotate {

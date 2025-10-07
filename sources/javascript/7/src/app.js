@@ -15,8 +15,8 @@ let videoLoaded = false;
 let mouseX, mouseY;
 
 //events
-window.addEventListener('keypress', keyPressFn, true); 
-container.addEventListener('mousemove', mouseMoveFn, true);
+window.addEventListener('keypress', keyPressFn); 
+container.addEventListener('mousemove', mouseMoveFn);
 
 //mouseMove
 function mouseMoveFn(event) {

@@ -30,7 +30,9 @@ function mouseMoveFn(event) {
 	containerMouse.style.left = `${event.pageX}px`;
 	mouseX = event.pageX;
 	mouseY = event.pageY;
+
 	video.playbackRate = mouseY / 100;
+	
 	if(mouseX > windowWidth/2) {
 		video.play();
 	}

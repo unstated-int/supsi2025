@@ -15,8 +15,8 @@ let windowHeight = window.innerHeight;
 let mouseX, mouseY;
 
 //events
-play.addEventListener("mouseleave", mouseLeaveFn, true);
-play.addEventListener("mouseenter", mouseEnterFn, true);
+play.addEventListener("mouseleave", mouseLeaveFn);
+play.addEventListener("mouseenter", mouseEnterFn);
 
 //mouseLeave
 function mouseLeaveFn(event) {

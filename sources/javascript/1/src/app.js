@@ -6,7 +6,7 @@ let btnBorderRadius = document.querySelector("#border-radius");
 let btnMarginTop = document.querySelector("#margin-top");
 
 btnChangeColor.addEventListener("click", () => {
-  variabilerettangolo.classList.toggle("blue");
+  variabilerettangolo.classList.toggle("rosso");
 });
 
 btnBorderRadius.addEventListener("dblclick", () => {

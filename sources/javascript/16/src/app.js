@@ -22,7 +22,7 @@ function resizeFn() {
   windowWidth = window.innerWidth ;
   const sectionNumber = findImageSection(windowWidth, screenSection);
   img.src = `src/img/${sectionNumber}.png`;
-  // img.style.transform = `scale(${sectionNumber / 6})`;
+  img.style.transform = `scale(${sectionNumber / 6})`;
 }
 
 //this function will find the section of the image

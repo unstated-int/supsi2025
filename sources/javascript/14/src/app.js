@@ -23,7 +23,7 @@ function mouseMoveFn(event) {
 
   //hide all the images and show element image with the same section number
   document.querySelectorAll('img').forEach((image) => {
-    image.style.opacity = "0.1";
+    image.style.opacity = "0.5";
   });
 
   const sectionNumber = findImageSection(mouseX, screenSection);

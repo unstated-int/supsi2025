@@ -3,6 +3,6 @@ function draw(result) {
   document.querySelector("#emotion").style.display = "block";
 
   if(result === 'happy') {
-   alert('You are happy!');
+   //alert('You are happy!');
   }
 }
