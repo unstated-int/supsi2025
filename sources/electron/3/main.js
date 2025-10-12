@@ -34,7 +34,7 @@ function createWindow() {
     },
   });
 
-  mainWindow.setPosition(1200, 800, true);
+  // mainWindow.setPosition(1200, 800, true);
   mainWindow.loadFile("renderer/index.html");
   return mainWindow;
 }

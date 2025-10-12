@@ -70,6 +70,6 @@ function mapRange(value, a, b, c, d) {
   return c + value * (d - c);
 }
 
-setInterval(showMouseCoords, 100);
-setInterval(updateStats, 1000);
+setInterval(showMouseCoords, 10);
+setInterval(updateStats, 500);
 updateStats();
