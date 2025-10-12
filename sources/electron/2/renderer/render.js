@@ -38,9 +38,12 @@ async function updateStats() {
     })`;
 
     //shape uptime
-    document.getElementById("shape-uptime").style.transform = `translateX(${
-      timeInfo.uptime / 1000
-    }px`;
+    //get hour from uptime
+    const hour = Math.floor(timeInfo.uptime / 3600);
+    console.log(hour);
+    document.getElementById("shape-uptime").style.left = `${
+      hour
+    }%`;
 
     //shape ram
     document.getElementById(
