@@ -1,0 +1,43 @@
+/** import fonts **/
+@font-face {
+  font-family: 'HGKBUnica77VIPBeta';
+  src: url('fonts/HGKBUnica77VIPBeta.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  -webkit-app-region: drag;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+progress {
+  width: 60%;
+  height: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent; /* colore dello sfondo della barra */
+  border: none;
+}
+
+.font-regular {
+  font-family: 'HGKBUnica77VIPBeta';
+  font-variation-settings: 'wght' 120;
+  font-size: 190px;
+  line-height: 100%;
+  padding: 0 0px;
+  transition: all font-variation-settings 0.1s ease-in-out;
+}
+
+/* Colore del riempimento (barra di avanzamento) */
+progress::-webkit-progress-bar {
+  background-color: gray; /* sfondo vuoto */
+}
+
+progress::-webkit-progress-value {
+  background-color: white; /* barra attiva in bianco */
+}

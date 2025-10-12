@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CC</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stat">Battery: <span id="battery">...</span>%</div>
+    <div class="stat">CPU Load: <span id="cpu">...</span>%</div>
+    <div class="stat">RAM Usage: <span id="ram">...</span>%</div>
+    <div class="stat">Mouse Position: <span id="mouse-coords">--</span></div>
+    <div class="stat">Uptime: <span id="uptime">00:00:00</span></div>
+    <div class="stat">
+      CPU Thermometer<br />
+      <progress id="cpu-thermometer" max="100" value="0"></progress>
+      <span id="cpu-thermometer-label">0%</span>
+    </div>
+
+    <script src="render.js"></script>
+  </body>
+</html>

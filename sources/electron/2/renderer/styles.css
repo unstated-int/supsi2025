@@ -1,0 +1,106 @@
+body {
+  -webkit-app-region: drag;
+  font-family: monospace;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/* grid */
+.row {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* grid- shapes */
+.col-1 {
+  flex: 1;
+  padding: 10px;
+}
+
+/* grid- informations */
+.col-2 {
+  height: 90px;
+  padding: 10px;
+}
+
+/* shapes */
+.shape {
+  transition: all ease-in-out 500ms;
+}
+
+#shape-battery {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+  left: 50px;
+  top: 40px;
+}
+
+#shape-cpu {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  transform: rotate(90deg);
+  position: fixed;
+  border-radius: 50%;
+  top: 100px;
+  right: 25px;
+  transform-origin: center;
+}
+
+#shape-ram {
+  width: 150px;
+  height: 10px;
+  background-color: white;
+  transform: rotate(90deg);
+  position: fixed;
+  top: 250px;
+  left: 120px;
+}
+
+#shape-mouse {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 250px;
+  left: 100px;
+  /* triangle */
+  transform-origin: center center;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#shape-uptime {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  position: fixed;
+  top: 200px;
+  left: 10px;
+}
+
+
+/* progress */
+progress {
+  width: 60%;
+  height: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent; /* colore dello sfondo della barra */
+  border: none;
+}
+
+/* Colore del riempimento (barra di avanzamento) */
+progress::-webkit-progress-bar {
+  background-color: gray; /* sfondo vuoto */
+}
+
+progress::-webkit-progress-value {
+  background-color: white; /* barra attiva in bianco */
+}
