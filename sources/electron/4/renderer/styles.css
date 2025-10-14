@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #0e0f12;
+  color: white;
+  height: 100px;
+  font-family: monospace;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+  transition: all 1s ease-in-out;
+}
+.line-wrap {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.line {
+  height: 100%;
+  background: white;
+  width: 0%;
+  transition: all 1s ease-in-out;
+}
+
+.stat, .time {
+  display: none;
+}
