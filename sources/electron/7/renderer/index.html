@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CC</title>
+    <!-- <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self' https://js.puter.com https://api.puter.com;
+             script-src 'self' 'unsafe-inline' https://js.puter.com;
+             connect-src 'self' https://api.puter.com wss://api.puter.com;
+             style-src 'self' 'unsafe-inline';"
+  />
+   -->
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="chat-container">
+        <div id="chat"></div>
+        <textarea id="prompt" placeholder="Scrivi un messaggio..."></textarea>
+      </div>
+      <button id="send">Invia</button>
+      <button id="clear">Cancella memoria</button>
+    </div>
+    <script src="render.js"></script>
+    <script src="ai.js"></script>
+  </body>
+</html>

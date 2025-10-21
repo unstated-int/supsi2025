@@ -15,7 +15,7 @@ let tray;
 let trayAnimationInterval;
 
 const w = 370;
-const h = 183;
+const h = 500;
 
 const trayFrames = [
   "icon-0.png",
@@ -32,10 +32,10 @@ function createWindow() {
     width: w,
     height: h,
     transparent: false,
-    frame: true,
+    frame: false,
     alwaysOnTop: true,
-    resizable: true,
-    hasShadow: true,
+    resizable: false,
+    hasShadow: false,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
       contextIsolation: true,
