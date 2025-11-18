@@ -1,10 +1,11 @@
 // === CONFIGURAZIONE ===
-const API_KEY = "YOUR ID DEEPSEEK"; 
+const API_KEY = "sk-1e10c2a11822459b97a83af72365cf91";
 const MODEL = "deepseek-chat";
 
 // === CONFIG ELEVEN LABS ===
-const ELEVEN_API_KEY = "YOUR ID ELEVEN LABS";
-const ELEVEN_VOICE_ID = "nPczCjzI2devNBz1zQrb"; 
+const ELEVEN_API_KEY =
+  "ce40627a4695871481690f44b60b54aeff521dcf666d8b2e592bcb75d4a97393";
+const ELEVEN_VOICE_ID = "Xb7hH8MSUJpSbSDYk0k2";
 const ELEVEN_URL = `https://api.elevenlabs.io/v1/text-to-speech/${ELEVEN_VOICE_ID}`;
 
 const chatEl = document.getElementById("chat");
@@ -66,7 +67,7 @@ async function speakWithElevenLabs(text) {
       },
       body: JSON.stringify({
         text: text,
-        model_id: "eleven_turbo_v2", 
+        model_id: "eleven_turbo_v2",
         voice_settings: {
           stability: 0.4,
           similarity_boost: 0.8,

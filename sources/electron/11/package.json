@@ -1,0 +1,39 @@
+{
+  "name": "cc1",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "package": "electron-packager . SystemMonitorApp --platform=darwin --arch=x64 --icon=assets/icon.icns --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.0.12",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "systeminformation": "^5.27.11"
+  },
+  "build": {
+    "appId": "com.leonardo.app",
+    "productName": "Leonardo Hand Tracking",
+    "files": [
+      "./main.js",
+      "./preload.js",
+      "./package.json",
+      "./renderer/**/*",
+      "./assets/**/*"
+    ],
+    "mac": {
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "assets/icon.ico"
+    },
+    "linux": {
+      "icon": "assets/icon.png"
+    }
+  }
+}
